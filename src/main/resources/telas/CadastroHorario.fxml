@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="10.0" style="-fx-background-color: #3333ff;" vgap="10.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.agendamento.controllers.CadastroHorarioController">
+  <columnConstraints>
+    <ColumnConstraints maxWidth="133.60001220703126" minWidth="10.0" prefWidth="119.19998779296874" />
+    <ColumnConstraints maxWidth="158.4" minWidth="10.0" prefWidth="150.4" />
+      <ColumnConstraints maxWidth="89.59997558593753" minWidth="10.0" prefWidth="25.599999999999966" />
+      <ColumnConstraints maxWidth="95.20001220703125" minWidth="10.0" prefWidth="21.60002441406249" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" />
+    <RowConstraints minHeight="10.0" />
+    <RowConstraints minHeight="10.0" />
+      <RowConstraints minHeight="10.0" prefHeight="100.0" />
+  </rowConstraints>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+   <children>
+      <Label text="Cliente:" textFill="WHITE" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="tf_cliente" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="btn_cliente" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Label prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Label text="Horario:" textFill="WHITE" GridPane.rowIndex="2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="cb_horarios" prefWidth="150.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2" />
+      <Button fx:id="btn_salvar" mnemonicParsing="false" prefHeight="26.0" prefWidth="118.0" text="Salvar" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+      <Button fx:id="btn_sair" mnemonicParsing="false" prefHeight="26.0" prefWidth="151.0" text="Sair" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label fx:id="lb_data" prefWidth="200.0" GridPane.columnSpan="4" />
+   </children>
+</GridPane>

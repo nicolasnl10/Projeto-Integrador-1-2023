@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.agendamento.controllers.CadastroClientesController">
+  <columnConstraints>
+    <ColumnConstraints minWidth="10.0" />
+    <ColumnConstraints minWidth="10.0" />
+      <ColumnConstraints halignment="RIGHT" minWidth="10.0" />
+      <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" />
+    <RowConstraints minHeight="10.0" />
+      <RowConstraints minHeight="10.0" />
+    <RowConstraints minHeight="10.0" />
+      <RowConstraints minHeight="10.0" prefHeight="100.0" />
+    <RowConstraints minHeight="10.0" />
+  </rowConstraints>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+   <children>
+      <Label text="Nome:" GridPane.rowIndex="1" />
+      <TextField fx:id="tf_cliente" prefWidth="300.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <Label text="Telefone:" GridPane.rowIndex="3" />
+      <Button fx:id="btn_salvar" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Salvar" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+      <Button fx:id="btn_sair" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Sair" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label text="Email:" GridPane.rowIndex="2" />
+      <TextField fx:id="tf_email" prefWidth="250.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+      <TextField fx:id="tf_telefone" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   </children>
+</GridPane>
